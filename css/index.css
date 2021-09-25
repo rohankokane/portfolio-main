@@ -136,6 +136,7 @@ body{
 @media screen and (max-width: 900px) {
 	.home {
 		background-size: cover;
+		max-height: 500px;
 	}
 	.home h1{
 		font-size: 2.5rem;
