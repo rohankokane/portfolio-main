@@ -106,8 +106,8 @@ body{
 .home p span.code {
 	opacity: 1;
 	visibility: visible;
-	animation: 0.35s hide linear forwards;
-	animation-delay: 1.5s;
+	animation: 0.5s hide linear forwards;
+	animation-delay: 1.7s;
 }
 @media screen and (max-width: 900px) {
 	.home h1{
