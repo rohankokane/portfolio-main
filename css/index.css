@@ -9,11 +9,16 @@
 *{
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
+	/*prevents tabing highlight issue in mobile */
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 html{
 	scroll-behavior: smooth;
 	box-sizing: border-box;
 	font-family: 'Inter', Roboto;
+	touch-action: manipulation;
 }
 body{
 	background-color: #fff;
@@ -37,7 +42,7 @@ body{
 	max-width: 600px;
     border-radius: 50%;
     text-align: center;
-    margin: 1rem 0;
+    margin: 1rem 0 2rem;
 }
 @media screen and (max-width: 800px) {
 	.profile-pic {
@@ -46,22 +51,21 @@ body{
 	}
 }
 .hd{
-	font-size: 20px;
+	font-size: 1rem;
 	z-index: 2;
 	/* font-family: 'Raleway'; */
 	top: 0;
 	position: sticky;
 	background-color: #1a223800;
 	text-align: right;
-	padding-top: 1rem;
-	padding-right: 30px;
+	padding: 1rem 2rem;
 	/* margin-top: -50px; */
 }
 .hd ul li{
 	display: inline-flex;
 }
 .hd ul li a{
-	padding: 0.7rem 1rem;
+	padding: 0.6rem 1rem;
 	text-decoration: none;
 	color: #fff;
 	transition: all ease-in-out 0.2s;
@@ -70,6 +74,12 @@ body{
 	transition: all ease-in-out 0.2s;
 	background-color: rgba(0, 0, 0, 0.211);
 	border-radius: 8px;
+}
+@media screen and (max-width: 900px) {
+	.hd{
+		padding: 0.8rem 0;
+		background-color: rgba(0, 0, 0, 0.295);
+	}
 }
 
 /* .hd ul li:hover a{
@@ -99,17 +109,17 @@ body{
 	flex-wrap: nowrap;
 	flex-direction: column;
 	justify-content: center;
-	padding-bottom: 4rem;
+	padding-bottom: 5rem;
 }
 
-
-.home h1{
-	color: #a4ccff;
+.cursive-name{
+	color: #ffffff;
 	font-family: 'Sacramento', cursive;
 	font-weight: 300;
 	/* opacity: 0; */
  	font-size: 5rem;
 }
+
 .home span{
 	color: #fff;
 	font-size: 1.8rem;
@@ -128,21 +138,26 @@ body{
 	color: #fff;
 }
 .home p span.code {
+	display: inline-block;
 	opacity: 0;
+	width: 35px;
 	visibility: visible;
-	animation: 2s showhide ease-in-out forwards;
-	animation-delay: 0.5s;
+	animation: 3s showhide cubic-bezier(0.4, 0, 0.2, 1) forwards;
+	animation-delay: 0.8s;
 }
 @media screen and (max-width: 900px) {
 	.home {
 		background-size: cover;
-		max-height: 500px;
+		max-height: 700px;
 	}
 	.home h1{
-		font-size: 2.5rem;
+		font-size: 3.5rem;
 		line-height: 80px;
+		padding-top: 10px;
 	}
 	.home span, .home p{
+		margin-top: 0px;
+
 		font-size: 1.5rem;
 	}
 }
@@ -215,7 +230,7 @@ hr.dash{
 	/* font-family: 'Raleway'; */
 	margin: 0px auto 15px;
 	width: 78%;
-	font-size: 20px;
+	font-size: 1rem;
 	line-height: 36px;
 	color: #1a2238;
 	max-width: 930px;
@@ -566,7 +581,7 @@ hr.dash{
 /*======================MEDIA QUERY FOR RESPONSIVE======================*/
 @media (max-width: 800px) {
 	body{
-		background-color: #1a2238;
+		/* background-color: #1a2238; */
 	}
 	.hd {
 		font-size: 15px;
@@ -603,4 +618,18 @@ hr.dash{
 	.pr6{
 		display: none;
 	}
+}
+
+footer {
+	background-color: transparent;
+	padding: 2rem 0;
+	background-color: #f5f7ff;
+
+}
+
+footer .cursive-name{
+	padding: 0.8rem 0;
+	color: #1a2238;
+	font-size: 2.8rem;
+	
 }
