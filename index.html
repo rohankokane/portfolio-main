@@ -21,23 +21,25 @@
 	<link rel="stylesheet" type="text/css" href="https://anijs.github.io/lib/anicollection/anicollection.css">
 </head>
 <body>
-    <div class="hd">
-		<!-- <i class="fas fa-laptop-code" style="color:white"></i> -->
-		<ul>
-			<li><a href="#about">About me</a></li>
-			<li><a href="#proj">Projects</a></li>
-			<li><a href="#exp">Experience</a></li>
-		</ul>
-	</div>
-
 	<div class="home">
-		<div class="pic-container">
-			<img src="./images/profile.png" class="profile-pic" alt="" srcset="">
+		<div class="hd">
+			<!-- <i class="fas fa-laptop-code" style="color:white"></i> -->
+			<ul>
+				<li><a href="#about">About me</a></li>
+				<li><a href="#proj">Projects</a></li>
+				<li><a href="#exp">Experience</a></li>
+			</ul>
 		</div>
-		<span>Hello, I'm</span>
-		<h1 data-anijs="if: scroll, on: window, do: pulse animated, before: $scrollReveal">Rohan Kokane</h1>
-		<p><span class="code fadeOut animated">&lt;  </span>A Frontend Developer<span class="code fadeOut animated">&#47;&gt;</span></p>
+		<div class="banner">
 
+			<div class="pic-container">
+				<img src="./images/profile.png" class="profile-pic" alt="" srcset="">
+			</div>
+			<span>Hello, I'm</span>
+			<h1 data-anijs="if: scroll, on: window, do: pulse animated, before: $scrollReveal">Rohan Kokane</h1>
+			<p><span class="code fadeOut animated">&lt;  </span>A Frontend Developer<span class="code fadeOut animated">&#47;&gt;</span></p>
+			
+		</div>
 		<!-- <span>A Frontend Developer</span> -->
 		<!-- <hr> -->
 	</div>
@@ -49,11 +51,12 @@
 		</h2>
 		<div class="info">I describe myself as a developer who loves <br/>building UIs👨‍💻, open source❤️, and the web platform🌐.
 			<br/>I am passionate about user experience and have a strong obsession for attention to detail 🧐.
-			<br/>If you are planning to build web apps feel free to reach out to me. Lets see how I can help you.</div>
+			<br/>If you are planning to build web apps feel free to reach out to me. Lets discuss how I can help you.</div>
 		<div class="subcontainabout">
             <a target="_blank" href="https://www.linkedin.com/in/rohankokane/" title="LinkedIn"><i class="fab fa-linkedin" data-anijs="if: scroll, on: window, do: rubberBand animated, before: $scrollReveal"></i></a>
 			<a target="_blank" href="https://twitter.com/rohankokane_" title="Twitter"><i class="fab fa-twitter" data-anijs="if: scroll, on: window, do: rubberBand animated, before: $scrollReveal"></i></a>
 			<a target="_blank" href="https://github.com/rohankokane" title="GitHub"><i class="fab fa-github" data-anijs="if: scroll, on: window, do: rubberBand animated, before: $scrollReveal"></i></a>
+			<a target="_blank" href="mailto:rohankokane19@gmail.com" title="rohankokane19@gmail.com"><i class="fas fa-envelope" data-anijs="if: scroll, on: window, do: rubberBand animated, before: $scrollReveal"></i></a>
 		</div>
 		<!-- <img src="./images/sakshi.jpg" data-anijs="if: scroll, on: window, do: pulse animated, before: $scrollReveal" width="159px"> -->
 	</div>
@@ -82,7 +85,7 @@
 				<img src="./images/expense_tracker.png"><p class="des"><span class="code">&lt;</span> ExpenseTracker <span class="code">&#47;&gt;</span></p>
 			</a></div>
 			<div class="pritem pr3" data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal"><a target="_blank" href="https://netflix-build-1359f.web.app/">
-				<img src="./images/netflix.png"><p class="des"><span class="code">&lt;</span>NETFLIX<span class="code">&#47;&gt;</span></p>
+				<img src="./images/netflix.png"><p class="des"><span class="code">&lt; </span>NETFLIX<span class="code"> &#47;&gt;</span></p>
 			</a></div>
 			<div class="pritem pr4" data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal"><a target="_blank" href="https://github.com/Sakshi1520/cowin-pro/tree/dev	">
 				<img src="./images/cowin-pro.png"><p class="des"><span class="code">&lt;</span> Cowin-Pro <span class="code">&#47;&gt;</span></p>
@@ -100,7 +103,7 @@
 	</div>
 	<div class="proj" id="exp">
 		<h2 class="prname">EXPERIENCE</h2>
-		<div class="prlist">
+		<div class="explist">
 			<div class="pritem pr1" data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal"><a target="_blank" href="https://www.lemonyellow.net/">
 				<img src="./images/ly.png"><p class="des"><span class="code">&lt;</span> Lemon Yellow LLP - Full Stack Developer<span class="code">&#47;&gt;</span></p>
 			</a></div>
