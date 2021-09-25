@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Portfolio</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,7 @@
   	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<!-- <link rel="icon" type = "image/x-icon" href="./images/sakshi.jpg"> -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -34,65 +35,75 @@
 			<img src="./images/profile.png" class="profile-pic" alt="" srcset="">
 		</div>
 		<span>Hello, I'm</span>
-		<h1 data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal">Rohan Kokane</h1>
-		<p>A Frontend Developer</p>
-		<hr>
+		<h1 data-anijs="if: scroll, on: window, do: pulse animated, before: $scrollReveal">Rohan Kokane</h1>
+		<p><span class="code fadeOut animated">&lt;  </span>A Frontend Developer<span class="code fadeOut animated">&#47;&gt;</span></p>
+
+		<!-- <span>A Frontend Developer</span> -->
+		<!-- <hr> -->
 	</div>
 
 	<div class="about" id="about">
-		<div class="abname">ABOUT ME</div>
-		<div class="info">I'm a 21 year old Front End Developer based in India ☀️. 
-			I describe myself as a developer who loves coding, open source, and the web platform ❤️.
-			I am passionate about user experience and have an eye for improving the UI ⚙️.</div>
+		<h2 class="abname">
+			ABOUT ME
+		<hr class="dash"/>
+		</h2>
+		<div class="info">I describe myself as a developer who loves <br/>coding👨‍💻, open source❤️, and the web platform🌐.
+			<br/>I am passionate about user experience and have an eye for improving the UI ⚙️.</div>
 		<div class="subcontainabout">
-            <a target="_blank" href="https://www.linkedin.com/in/rohankokane/" title="LinkedIn"><i class="fab fa-linkedin" data-anijs="if: scroll, on: window, do: rubberBand animated, before: $scrollReveal repeat"></i></a>
-			<a target="_blank" href="https://github.com/rohankokane" title="GitHub"><i class="fab fa-github" data-anijs="if: scroll, on: window, do: rubberBand animated, before: $scrollReveal repeat"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/rohankokane/" title="LinkedIn"><i class="fab fa-linkedin" data-anijs="if: scroll, on: window, do: rubberBand animated, before: $scrollReveal"></i></a>
+			<a target="_blank" href="https://twitter.com/rohankokane_" title="Twitter"><i class="fab fa-twitter" data-anijs="if: scroll, on: window, do: rubberBand animated, before: $scrollReveal"></i></a>
+			<a target="_blank" href="https://github.com/rohankokane" title="GitHub"><i class="fab fa-github" data-anijs="if: scroll, on: window, do: rubberBand animated, before: $scrollReveal"></i></a>
 		</div>
-		<!-- <img src="./images/sakshi.jpg" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal" width="159px"> -->
+		<!-- <img src="./images/sakshi.jpg" data-anijs="if: scroll, on: window, do: pulse animated, before: $scrollReveal" width="159px"> -->
 	</div>
 	<div class="skill">
-		<div class="skname">MY SKILLSETS</div>
+		<h2 class="skname">
+			MY SKILLSET
+		</h2>
 		<div class="skillsets">
-			<div class="sk" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal repeat"><i class="fab fa-html5"></i>HTML5</div>
-			<div class="sk" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal repeat"><i class="fab fa-css3"></i>CSS3</div>
-			<div class="sk" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal repeat"><i class="fab fa-js"></i>JavaScript</div>
-			<div class="sk" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal repeat"><i class="fab fa-react"></i>React</div>
-			<div class="sk" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal repeat"><i class="fab fa-sass"></i>SCSS</div>
-			<div class="sk" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal repeat"><i class="fab fa-node-js"></i>NodeJs</div>
+			<div class="sk" data-anijs="if: scroll, on: window, do: flipInY animated, before: $scrollReveal"><i class="fab fa-html5"></i>HTML5</div>
+			<div class="sk" data-anijs="if: scroll, on: window, do: flipInY animated, before: $scrollReveal"><i class="fab fa-css3"></i>CSS3</div>
+			<div class="sk" data-anijs="if: scroll, on: window, do: flipInY animated, before: $scrollReveal"><i class="fab fa-js"></i>JavaScript ES6+</div>
+			<div class="sk" data-anijs="if: scroll, on: window, do: flipInY animated, before: $scrollReveal"><i class="fab fa-react"></i>React</div>
+			<div class="sk" data-anijs="if: scroll, on: window, do: flipInY animated, before: $scrollReveal"><img src="./images//icons8-redux.svg"/>Redux</div>
+			<div class="sk" data-anijs="if: scroll, on: window, do: flipInY animated, before: $scrollReveal"><img src="./images//icons8-typescript.svg"/>TypeScript</div>
+			<div class="sk" data-anijs="if: scroll, on: window, do: flipInY animated, before: $scrollReveal"><img src="./images//icons8-firebase.svg"/>Firebase</div>
+			<div class="sk" data-anijs="if: scroll, on: window, do: flipInY animated, before: $scrollReveal"><i class="fab fa-sass"></i>SCSS</div>
+			<div class="sk" data-anijs="if: scroll, on: window, do: flipInY animated, before: $scrollReveal"><i class="fab fa-node-js"></i>NodeJs</div>
 		</div>
 	</div>
 
 
 	<div class="proj" id="proj">
-		<div class="prname">SOME OF MY PROJECTS</div>
+		<h2 class="prname">PROJECTS</h2>
 		<div class="prlist">
-			<div class="pritem pr1" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal"><a target="_blank" href="https://expense-tracker-rohan.netlify.app/">
+			<div class="pritem pr1" data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal"><a target="_blank" href="https://expense-tracker-rohan.netlify.app/">
 				<img src="./images/expense_tracker.png"><p class="des"><span class="code">&lt;</span> ExpenseTracker <span class="code">&#47;&gt;</span></p>
 			</a></div>
-			<div class="pritem pr3" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal"><a target="_blank" href="https://netflix-build-1359f.web.app/">
+			<div class="pritem pr3" data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal"><a target="_blank" href="https://netflix-build-1359f.web.app/">
 				<img src="./images/netflix.png"><p class="des"><span class="code">&lt;</span>NETFLIX<span class="code">&#47;&gt;</span></p>
 			</a></div>
-			<div class="pritem pr4" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal"><a target="_blank" href="https://github.com/Sakshi1520/cowin-pro/tree/dev	">
+			<div class="pritem pr4" data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal"><a target="_blank" href="https://github.com/Sakshi1520/cowin-pro/tree/dev	">
 				<img src="./images/cowin-pro.png"><p class="des"><span class="code">&lt;</span> Cowin-Pro <span class="code">&#47;&gt;</span></p>
 			</a></div>
-			<div class="pritem pr5" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal"><a target="_blank" href="https://chat-app-8112a.web.app/">
+			<div class="pritem pr5" data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal"><a target="_blank" href="https://chat-app-8112a.web.app/">
 				<img src="./images/chat_up.png"><p class="des"><span class="code">&lt;</span> Chat Up <span class="code">&#47;&gt;</span></p>
 			</a></div>
-			<div class="pritem pr2" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal"><a target="_blank" href="https://www.rait.ac.in/covid19portal/">
+			<div class="pritem pr2" data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal"><a target="_blank" href="https://www.rait.ac.in/covid19portal/">
 				<img src="./images/portal.png"><p class="des"><span class="code">&lt;</span> Covid-19 Portal <span class="code">&#47;&gt;</span></p>
 			</a></div>
-			<div class="pritem pr5" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal"><a href="#">
+			<div class="pritem pr5" data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal"><a href="#">
 				<img src="./images/mog.png"><p class="des"><span class="code">&lt;</span> Maths Academy <span class="code">&#47;&gt;</span></p>
 			</a></div>
 		</div>
 	</div>
 	<div class="proj" id="internships">
-		<div class="prname">INTERNSHIPS</div>
+		<h2 class="prname">EXPERIENCE</h2>
 		<div class="prlist">
-			<div class="pritem pr1" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal"><a target="_blank" href="https://www.lemonyellow.net/">
+			<div class="pritem pr1" data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal"><a target="_blank" href="https://www.lemonyellow.net/">
 				<img src="./images/ly.png"><p class="des"><span class="code">&lt;</span> Lemon Yellow LLP - Full Stack Developer<span class="code">&#47;&gt;</span></p>
 			</a></div>
-			<div class="pritem pr2" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal"><a target="_blank" href="https://www.urneeds.co.in/">
+			<div class="pritem pr2" data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal"><a target="_blank" href="https://drive.google.com/file/d/1sTZ9wiC054UwL6FQyLPT-eRLHQbPurMT/view?usp=sharing">
 				<img src="./images/myrait.png"><p class="des"><span class="code">&lt;</span> SDG-RAIT - Web Developer <span class="code">&#47;&gt;</span></p>
 			</a></div>
 		</div>
