@@ -37,6 +37,7 @@ body{
 	/* height: 300px; */
 
 }
+
 .profile-pic {
     width: 15%;
 	max-width: 600px;
@@ -97,7 +98,7 @@ body{
 	background-position: center right, center left;
 	background-repeat: no-repeat;
 	background-size: contain;
-	
+
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
@@ -124,7 +125,6 @@ body{
 	color: #fff;
 	font-size: 1.8rem;
 	line-height: 1.5rem;
-	font-family: 'Raleway';
 }
 
 .home p{
@@ -132,7 +132,6 @@ body{
 	opacity: 1;
 	/* animation: 0.35s showw linear forwards;
 	animation-delay: 1.1s; */
-	font-family: 'Raleway';
 	font-size: 1.875rem;
 	/* font-style: oblique; */
 	color: #fff;
@@ -209,8 +208,8 @@ hr.dash{
 	text-align: center;
 	/* font-family: 'Fugaz One'; */
 	background-image: linear-gradient(
-		180deg, 
-		#fff 0%, 
+		180deg,
+		#fff 0%,
 		#f5f7ff 85%
 	);
 }
@@ -239,9 +238,6 @@ hr.dash{
 .info a{
 	color: #1a2238;
 	text-decoration: none;
-}
-.info a span{
-	/* font-family: 'Poppins'; */
 }
 .about img{
 	border-radius: 50%;
@@ -438,7 +434,6 @@ hr.dash{
 .pritem a{
 	text-decoration: none;
 	color: #fff;
-	/* font-family: 'Poppins'; */
 }
 .des{
 	background-color: #1a2238;
@@ -631,5 +626,5 @@ footer .cursive-name{
 	padding: 0.8rem 0;
 	color: #1a2238;
 	font-size: 2.8rem;
-	
+
 }
